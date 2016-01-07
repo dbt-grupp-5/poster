@@ -1,5 +1,5 @@
 \documentclass[final]{beamer}
-\usepackage[orientation=landscape, size=custom, width=100cm, height=70cm, scale=1.5]{beamerposter}
+\usepackage[orientation=landscape, size=custom, width=100cm, height=70cm, scale=1.4]{beamerposter}
 
 \usepackage[swedish]{babel}
 \usepackage[T1]{fontenc}
@@ -31,7 +31,7 @@
 \newlength{\onecolwid}
 \setlength{\onecolwid}{0.2\textwidth} % Width of one column
 
-\title{Vattenrening med robotflotte}
+\title{Ytgående farkost för vattenrening}
 \author{Anton Eriksson, Emelie Nordlinder, Jenny Bergman,
   Jesper Vesterberg, Joel Vedin, Johan Olofsson, Rasmus Nyman}
 \institute{Design-Build-Test Grupp 5, Umeå Universitet}
@@ -70,20 +70,20 @@
 
       \begin{block}{Introduktion}
 
-        \begin{itemize}
-        \item Spinchem utvecklar en \emph{roterande bäddreaktor}, RBR.
-        \item Uppdraget var att utveckla en flytande plattform åt dessa som kan fjärrstyras, en robotflotte.
-        \item Syfte: Rening av förorenade vattenmassor.
-        \item Hur effektivt kan robotflotten rena en mängd vatten?
-        \end{itemize}
+        SpinChem har utvecklat en \emph{roterande bäddreaktor}, RBR,
+        som kan användas för att rena vattenmassor.
+
+        Uppdraget var att utveckla
+        en ytgående farkost som kan förflytta och driva dessa i t.ex. en sjö.
+        På detta sätt kan föroreningar, t.ex. tungmetaller, plockas upp.
+
+        Frågeställning: Hur effektivt kan farkosten rena en vattenmassa?
 
       \end{block}
 
       \begin{block}{Rening}
-        \begin{itemize}
-        \item Den roterande bäddreaktorn laddas med en reaktant, i detta fall jonbytare.
-        \item Tester är gjorda i en bassäng med basiskt vatten som simulerar en förorening.
-        \end{itemize}
+        Den roterande bäddreaktorn laddas med en reaktant, i detta fall jonbytare.
+        Tester är gjorda i en bassäng med basiskt vatten som simulerar en förorening.
 
       \end{block}
 
@@ -92,18 +92,14 @@
     \begin{column}{\onecolwid}
 
       \begin{block}{Design}
-        \begin{itemize}
-        \item Många iterationer till färdig prototyp
-
-        \item Modulär uppbyggnad
+        Farkosten designades med en modulär uppbyggnad:
           \begin{itemize}
           \item Utbytbara RBR-moduler med drivning och vågbrytare
           \item Kan användas med en eller två moduler
           \item Demonterbara pontoner, anpassningsbar flytkraft och lättare transport.
           \end{itemize}
-        \end{itemize}
 
-        \vskip 6cm
+        \vskip 5cm
         \begin{figure}[H]
           \centering
           \hbox{\hspace{-5cm}\includegraphics[width=27cm]{figures/front_box_off.png}}
@@ -115,14 +111,17 @@
     \begin{column}{\onecolwid}
 
       \begin{block}{Färdig prototyp}
-        \begin{itemize}
-        \item Billig att tillverka. Använder många färdiga komponenter.
-        \item Till stor del återvinnigsbar.
-        \item God manöverbarhet.
-          \item Tillräcklig batterikapacitet för att förbruka reaktanterna innan batterierna är förbrukade.
-        \end{itemize}
+        Den färdiga prototypen är billig att tillverka och använder till stor del
+        färdiga komponenter. Byggmaterialet är utvalt för att vara återvinningsbart
+        och lätt att arbeta med.
 
-        \vskip 8cm
+        På grund av framdrivning med luftpropellrar och roder uppnås god manöverbarhet
+        även vid låga hastigheter.
+
+        Batterikapaciteten är tillräcklig för att driva farkosten längre än reaktanternas
+        kapacitet i våra tester.
+
+        \vskip 0cm
         \begin{figure}[H]
           \centering
           \hbox{\hspace{-3cm}\includegraphics[width=25cm]{figures/front_rbr.png}}
@@ -141,16 +140,17 @@
         \vskip 2cm
         \begin{figure}[H]
           \centering
-          \reflectbox{\includegraphics[width=\linewidth]{figures/samples.png}}
-          \caption{Före- och efterprover.}
+          \includegraphics[width=\linewidth]{figures/pool.jpeg}
+          \caption{Test i bassäng på Miljötekniskt Center i Umeå.}
         \end{figure}
 
         \vskip 2cm
         \begin{figure}[H]
           \centering
-          \includegraphics[width=\linewidth]{figures/pool.jpeg}
-          \caption{Test i bassäng på Miljötekniskt Center i Umeå.}
+          \reflectbox{\includegraphics[width=\linewidth]{figures/samples.png}}
+          \caption{Före- och efterprover.}
         \end{figure}
+
       \end{block}
 
     \end{column}
